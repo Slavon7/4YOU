@@ -24,6 +24,7 @@
 }
 
 a {
+    color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
     font-family: "Coolvetica";
@@ -45,6 +46,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Coolvetica";
     font-weight: inherit;
     font-size: inherit;
 }
@@ -61,7 +63,6 @@ body {
 
 .wrapper {
     min-height: 100%;
-    overflow: hidden;
 }
 
 ._container{
@@ -186,7 +187,9 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
 .main-block__color {
+    background-color: #CC427A;
     position: absolute;
     width: 100%;
     height: 650px;
@@ -194,12 +197,9 @@ body {
     left: 0;
 }
 
-.main-block__color {
-    background-color: #CC427A;
-}
 /* --Page-with-items-------------------------------- */
 .page__item-interblock {
-    height: 520px;
+    height: 520px;   
 }
 
 .circle-1 {
@@ -560,17 +560,11 @@ body {
 }
 /* ------------------------------------ */
 .cleanliness-block {
-    height: 900px;
-}
-
-.cleanliness-block__background {
-    background-image: url(/img/BG-Cleanlines.svg);
-    position: absolute;
     margin-top: 30px;
-    height: 90%;
-    z-index: -1;
+    background-image: url(/img/BG-Cleanlines.svg);
+    height: 900px;
     width: 100%;
-    background-size: cover;
+    background-size: cover; /* увеличиваем размер на 50% */
 }
 
 .cleanliness-block__title {
@@ -612,19 +606,22 @@ body {
 }
 
 .cleanliness-block__left-image {
-    margin-left: -100px;
+    margin-left: -73px;
+    margin-top: 102px;
     position: absolute;
 }
 
 .cleanliness-block__body {
-    margin: 260px 0px 0px 480px;
+    padding: 260px 0px 0px 480px;
     align-items: center;
     justify-content: space-between;
     display: flex;
     gap: 42px;
 }
 /* --about us-------------------------- */
-
+.about-us-block{
+    margin-top: 42px;
+}
 .about-us__body-texts {
     display: flex;
     justify-content: center;
@@ -696,9 +693,24 @@ body {
     font-family: "Cyrge";
     line-height: 150%;
 }
+
+.about-us__pagination {
+    background-color: #CC427A;
+}
+
+.about__pagination-indicator--active{
+    background-color: #CC427A;
+}
 /* --Blog------------------------------ */
 .interblock-block__blog{
+    position: absolute;
+    margin-top: -80px;
     height: 300px;
+    z-index: 1;
+}
+
+.circles-block__blog {
+    cursor: pointer;
 }
 
 .circle__blog{
@@ -706,7 +718,6 @@ body {
     border-radius: 100%;
     border: 5px solid #F5FAFF;
 }
-
 
 .circle-1__blog {
     position: absolute;
@@ -785,18 +796,51 @@ body {
     height: 108px;
     margin: 258px 0px 0px 1410px;
 }
+
+.blog__container{
+    position: relative;
+    z-index: 10;
+}
+
+.page__blog {
+    margin-top: 90px;
+    background-image: url("/img/background_Items.svg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}
+
+.blog__title{
+    display: inline-block;
+    font-size: 72px;
+    padding: 100px 0px 36px 200px;
+    text-transform: uppercase;
+}
+
+.blog__body{
+    max-width: 100%;
+    gap: 25px;
+    display: flex;
+}
+
+.item-blog__text{
+    padding-top: 8px;
+    font-size: 20px;
+    font-family: "Cygre";
+    width: 382px;
+}
 /* --FOOTER---------------------------- */
 footer{
-
+    margin-top: 8px;
     background-color: #4C76CA;
     font-style: normal;
 }
 
 .footer__items {
     padding-top: 74px;
-    display: flex;
+    display: grid;
     color: #FFFFFF;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
     align-content: flex-start;
     justify-content: space-between;
 }
@@ -813,6 +857,10 @@ footer{
     font-size: 16px;
     padding-top: 35px;
     line-height: 30px;
+}
+
+.footer__item-number {
+    font-weight: bold;
 }
 
 .footer__item-logo img{
@@ -833,7 +881,7 @@ footer{
     gap: 24px;
 }
 
-.footer__lower{
+.footer__item-lower{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -843,4 +891,14 @@ footer{
     padding-top: 24px;
     padding-bottom: 48px;
     line-height: 150%;
+}
+
+.footer__terms {
+    text-decoration: underline;
+    font-family: "Cygre";
+}
+
+.footer__privacy {
+    text-decoration: underline;
+    font-family: "Cygre";
 }

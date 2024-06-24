@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="img/icon.svg" type="image/svg">
     <title>4YOU</title>
 </head>
 
@@ -19,16 +19,16 @@
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link">Каталог</a>
+                            <a href="#catalog" class="menu__link">Каталог</a>
                         </li> 
                         <li class="menu__item">
-                            <a class="menu__link">О нас</a>
+                            <a href="#about-us" class="menu__link">О нас</a>
                         </li> 
                         <li class="menu__item">
-                            <a class="menu__link">Блог</a>
+                            <a href="#blog" class="menu__link">Блог</a>
                         </li> 
                         <li class="menu__item">
-                            <a class="menu__link">Контакты</a>
+                            <a href="#contacts" class="menu__link">Контакты</a>
                         </li>
                         <li class="menu__item_request-call">
                             <a class="menu__link_request-call">заказать звонок</a>
@@ -42,7 +42,7 @@
                 <div class="main-block__container _container">
                     <div class="main-block__body">
                         <div  class="main-block__image">
-                            <img src="/img/cover__red-bottle.png"/>
+                            <img src="img/cover__red-bottle.png"/>
                             </div>
                         <h1 class="main-block__title">MAXIMUM ВЫГОДЫ</h1>
                             <div class="main-block__information">
@@ -71,7 +71,7 @@
                     <div class="circle-10"></div>
                 </div>
             </div>
-            <section class="page__item-block item">
+            <section id="catalog" class="page__item-block item">
                 <div class="item__container _container">
                     <h1 class="item__title">Наши товары</h1>
                     <div class="item__body">
@@ -149,7 +149,7 @@
                     </div>
                 </div>  
             </section>
-            <section class="page__advantage advantage">
+            <section id="about-us" class="page__advantage advantage">
                 <div class="interblock-block__advantage">
                     <div class="circles-block__advantage">
                         <div class="circle-1__advantage circle__advantage"></div>
@@ -278,19 +278,19 @@
                         </div>
                     </div>
                     <div class="item__pagination">
-                        <button class="item__pagination-button item__pagination-button--prev">‹</button>
+                        <button class="item__pagination-button about-us__pagination item__pagination-button--prev">‹</button>
                         <div class="item__pagination-indicators">
-                            <button class="item__pagination-indicator item__pagination-indicator--active" data-page="1"></button>
+                            <button class="item__pagination-indicator about__pagination-indicator--active" data-page="1"></button>
                             <button class="item__pagination-indicator" data-page="2"></button>
                             <button class="item__pagination-indicator" data-page="3"></button>
                             <button class="item__pagination-indicator" data-page="4"></button>
                             <button class="item__pagination-indicator" data-page="5"></button>
                         </div>
-                        <button class="item__pagination-button item__pagination-button--next">›</button>
+                        <button class="item__pagination-button about-us__pagination item__pagination-button--next">›</button>
                     </div>
                 </div>
             </section>
-            <section class="blog-block">
+            <section id="blog" class="page__blog blog">
                 <div class="interblock-block__blog">
                     <div class="circles-block__blog">
                         <div class="circle-1__blog circle__blog"></div>
@@ -304,24 +304,52 @@
                         <div class="circle-9__blog circle__blog"></div>
                     </div>
                 </div>
-                <div class="blog__container _container"></div>
+                <div class="blog__container _container">
+                    <h1 class="blog__title">Блог и новости</h1>
+                    <div class="blog__body">
+                        <div class="blog__column">
+                            <div class="item-blog__image"><img src="img/photo.jpg" alt="Новость"></div>
+                            <div class="item-blog__text">Lorem ipsum dolor sit amet consectetur. Vel lacus aenean posuere tellus sed vitae.</div>
+                        </div>
+                        <div class="blog__column">
+                            <div class="item-blog__image"><img src="img/photo.jpg" alt="Новость"></div>
+                            <div class="item-blog__text">Lorem ipsum dolor sit amet consectetur. Vel lacus aenean posuere tellus sed vitae.</div>
+                        </div>
+                        <div class="blog__column">
+                            <div class="item-blog__image"><img src="img/photo.jpg" alt="Новость"></div>
+                            <div class="item-blog__text">Lorem ipsum dolor sit amet consectetur. Vel lacus aenean posuere tellus sed vitae.</div>
+                        </div>
+                    </div>
+                    <div class="item__pagination">
+                        <button class="item__pagination-button item__pagination-button--prev">‹</button>
+                        <div class="item__pagination-indicators">
+                            <button class="item__pagination-indicator item__pagination-indicator--active" data-page="1"></button>
+                            <button class="item__pagination-indicator" data-page="2"></button>
+                            <button class="item__pagination-indicator" data-page="3"></button>
+                            <button class="item__pagination-indicator" data-page="4"></button>
+                            <button class="item__pagination-indicator" data-page="5"></button>
+                        </div>
+                        <button class="item__pagination-button item__pagination-button--next">›</button>
+                    </div>
+                </div>
+            </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer id="contacts" class="footer">
             <div class="footer__container _container">
                 <div class="footer__items">
                     <div class="footer__item">
                         <div class="footer__item-box">
-                            <div class="footer__item-logo">
+                            <a href="#" class="footer__item-logo">
                              <img src="img/logo-4you.svg" alt="">
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="footer__item">
                         <div class="footer__item-box">
                         <div class="footer__item-title">Служба поддержки</div>
                         <div class="footer__item-text">
-                            <div>+7 777 770 7007</div>
+                            <div class="footer__item-number">+7 777 770 7007</div>
                             <div>пн-пт с 9:00 до 18:00</div>
                         </div>
                         </div>
@@ -345,15 +373,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="footer__lower">
+                <div class="footer__item-lower">
                     <div class="footer__copyright">Copyright © 2024 All Rights Reserved</div>
-                    <div class="footer__terms">Terms of Use</div>
-                    <div class="footer__privacy">Privacy Policy</div>
-                    <div class="footer__privacy"></div>
                 </div>
+                <div class="footer__item-lower">
+                    <a href="#" class="footer__terms">Terms of Use</a>
+                </div>
+                <div class="footer__item-lower">    
+                    <a href="#" class="footer__privacy">Privacy Policy</a>
+                </div>
+            </div>
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
