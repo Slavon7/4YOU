@@ -202,112 +202,80 @@ body {
     height: 520px;   
 }
 
-.circle-1 {
+[class^="circle-"] {
     position: absolute;
     z-index: 10;
-    width: 72px;
-    height: 72px;
     background-color: #F6B9C9;
     border-radius: 100%;
+}
+
+
+.circle-1 {
+    width: 72px;
+    height: 72px;
     border: 5px solid #FDEBEF;
     margin: 500px 0px 0px -40px;
 }
 
 .circle-2 {
-    position: absolute;
-    z-index: 10;
     width: 512px;
     height: 512px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 15px solid #FDEBEF;
     margin: 80px 0px 0px -40px;
 }
 
 .circle-3 {
-    position: absolute;
-    z-index: 10;
     width: 156px;
     height: 156px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 10px solid #FDEBEF;
     margin: -40px 0px 0px 320px;
 }
 
 .circle-4 {
-    position: absolute;
-    z-index: 10;
     width: 140px;
     height: 140px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 10px solid #FDEBEF;
     margin: 240px 0px 0px 474px;
 }
 
 .circle-5 {
-    position: absolute;
-    z-index: 10;
     width: 200px;
     height: 200px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 10px solid #FDEBEF;
     margin: 370px 0px 0px 450px;
 }
 
 .circle-6 {
-    position: absolute;
-    z-index: 10;
     width: 122px;
     height: 122px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 10px solid #FDEBEF;
     margin: 300px 0px 0px 620px;
 }
 
 .circle-7 {
-    position: absolute;
-    z-index: 10;
     width: 72px;
     height: 72px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 5px solid #FDEBEF;
     margin: 430px 0px 0px 660px;
 }
 
 .circle-8 {
-    position: absolute;
-    z-index: 10;
     width: 370px;
     height: 370px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 15px solid #FDEBEF;
     margin: 40px 0px 0px 1660px;
 }
 
 .circle-9 {
-    position: absolute;
-    z-index: 10;
     width: 170px;
     height: 170px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 10px solid #FDEBEF;
     margin: 240px 0px 0px 1500px;
 }
 
 .circle-10 {
-    position: absolute;
-    z-index: 10;
     width: 72px;
     height: 72px;
-    background-color: #F6B9C9;
-    border-radius: 100%;
     border: 5px solid #FDEBEF;
     margin: 380px 0px 0px 1660px;
 }
