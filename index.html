@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="icon" href="img/icon.svg" type="image/svg">
+    <link href="css/main.css" rel="stylesheet">
     <title>4YOU</title>
 </head>
 
@@ -16,9 +17,7 @@
                 <a href="" class="header__logo">
                     <img height="24px" width="84px" src="img/logo-4you.svg"/>
                 </a>
-                <div class="header__toggle">
-                    <span></span>
-                    <span></span>
+                <div class="header__burger">
                     <span></span>
                 </div>
                 <nav class="header__menu menu">
@@ -254,6 +253,7 @@
                                 <div class="about-us__text">
                                     Lorem ipsum dolor sit amet consectetur. Blandit sit felis aliquet ut sit. Auctor integer quis quis aliquam fringilla ornare. Non enim feugiat don
                                 </div>
+                                <div class="about-us__background"></div>
                             </div>
                         </div>
                         <div class="about-us__column">
@@ -266,6 +266,7 @@
                                 <div class="about-us__text">
                                     Lorem ipsum dolor sit amet consectetur. Blandit sit felis aliquet ut sit. Auctor integer quis quis aliquam fringilla ornare. Non enim feugiat don
                                 </div>
+                                <div class="about-us__background"></div>
                             </div>
                         </div>
                         <div class="about-us__column">
@@ -278,6 +279,7 @@
                                 <div class="about-us__text">
                                     Lorem ipsum dolor sit amet consectetur. Blandit sit felis aliquet ut sit. Auctor integer quis quis aliquam fringilla ornare. Non enim feugiat don
                                 </div>
+                                <div class="about-us__background"></div>
                             </div>
                         </div>
                     </div>
@@ -296,15 +298,8 @@
             </section>
             <section id="blog" class="page__blog blog">
                     <div class="circles__container-blog">
-                        <div class="circle-1__blog circle__blog"></div>
-                        <div class="circle-2__blog circle__blog"></div>
-                        <div class="circle-3__blog circle__blog"></div>
-                        <div class="circle-4__blog circle__blog"></div>
-                        <div class="circle-5__blog circle__blog"></div>
-                        <div class="circle-6__blog circle__blog"></div>
-                        <div class="circle-7__blog circle__blog"></div>
-                        <div class="circle-8__blog circle__blog"></div>
-                        <div class="circle-9__blog circle__blog"></div>
+                        <article class="flex column justify-center parallax">
+                        </article>
                     </div>
                 <div class="blog__container _container">
                     <h1 class="blog__title">Блог и новости</h1>
@@ -392,19 +387,22 @@
             <a href="#" class="popup__area"></a>
             <div class="popup__body">
                 <div class="popup__content">
-                    <a href="#" class="popup__close">X</a>
+                    <a href="#" class="popup__close"><img src="/img/crose_to_close.svg"></a>
                         <div class="popup__title">Оставьте заявку</div>
                         <div class="popup__text">и мы свяжемся с вами в ближайшее время</div>
                         <form action="getform.php" method="get">
                             <input type="text" name="first_name" placeholder="Ваше имя"/><br />
                             <input type="tel" name="user_phone" placeholder="Ваш телефон"/><br />
-                            <input type="submit" value="Отправить" />
+                            <button class="button-send"><div class="send-text">Отправить</div><img src="img/button_send.svg" alt="Кнопка отправить"></button>
                         </form>
                 </div>
             </div>
         </div>
     </div>
-    <script src="css/burger-menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="burger-menu.js"></script>
     <script src="script.js"></script>
+    <script async defer src="./index.js" type="module"></script>
+    
 </body>
 </html>
